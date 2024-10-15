@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>3 Iklhas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">OUR PROJECT</a></li>
+                <li><a href="">DUMPS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+    
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>"Penggera Suhu Panas"</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus urna at purus imperdiet dignissim. Aenean vitae tempus lorem, id elementum felis. Duis suscipit nunc et placerat fringilla. Praesent in quam turpis. Praesent posuere dapibus orci quis pretium. Morbi vel tincidunt quam. Morbi vehicula egestas malesuada.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.JPEG">
+        </div>
+
+    </div>
+
+</section>
+
+<!-------- Call To Action ------->
+
+<section class="footer">
+    <h4>About Our Project</h4>
+    <p>This PBL STEM Project was created to solve a meteorological problem that can have a<br>bad effect on us, which is hot weather. The name of our project is "Penggera Suhu Panas".</p>
+    <div class="icons">
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Made by Alif.</p>
+    </div>
+</section>
+
+<!--------Javascript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
